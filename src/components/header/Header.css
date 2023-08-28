@@ -55,35 +55,35 @@
 @keyframes changeColor {
   0% {
     color: #fff;
-    transform: rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
   }
 
   16% {
     color: #ea9242;
-    transform: rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
   }
 
   32% {
     color: #ea9242;
-    transform: rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
   }
 
   48% {
     color: #e0267f;
-    transform: rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
   }
 
   64% {
     color: #e0267f;
-    transform: rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
   }
   80% {
     color: #1a83a9;
-    transform: rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
   }
   96% {
     color: #1a83a9;
-    transform: rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
   }
   100% {
     color: #fff;
