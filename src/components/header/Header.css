@@ -1,0 +1,23 @@
+.header {
+    width: 100vw;
+    padding: 20px;
+    background-color: #efd6d6;
+    border-bottom: solid 2px #fff;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.header-title {
+padding-left: 10px;
+color: #fff;
+font-size: 30px;
+font-weight: 700;
+margin: 0;
+transition: color 200ms ease-in-out;
+}
+
+.header-title:hover {
+    color: #1a83a9;
+}
