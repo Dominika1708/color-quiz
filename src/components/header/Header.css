@@ -1,23 +1,101 @@
 .header {
-    width: 100vw;
-    padding: 20px;
-    background-color: #efd6d6;
-    border-bottom: solid 2px #fff;
+  width: 100vw;
+  padding: 20px;
+  background-color: #efd6d6;
+  border-bottom: solid 2px #fff;
 }
 
 .header-logo {
-    display: flex;
+  display: flex;
+}
+
+.header-img {
+    animation:spin 20s 1 linear;
 }
 
 .header-title {
-padding-left: 10px;
-color: #fff;
-font-size: 30px;
-font-weight: 700;
-margin: 0;
-transition: color 200ms ease-in-out;
+  display: flex;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
 }
 
-.header-title:hover {
+.header-title span {
+  transform-origin: top;
+  animation: changeColor 20s 1 linear;
+}
+
+.header-title span:nth-child(2) {
+  animation-delay: 500ms;
+}
+.header-title span:nth-child(3) {
+  animation-delay: 1000ms;
+}
+.header-title span:nth-child(4) {
+  animation-delay: 1500ms;
+}
+.header-title span:nth-child(5) {
+  animation-delay: 2000ms;
+}
+.header-title span:nth-child(6) {
+  animation-delay: 2500ms;
+}
+.header-title span:nth-child(7) {
+  animation-delay: 3000ms;
+}
+.header-title span:nth-child(8) {
+  animation-delay: 3500ms;
+}
+.header-title span:nth-child(9) {
+  animation-delay: 4000ms;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #fff;
+    transform: rotateX(0deg);
+  }
+
+  16% {
+    color: #ea9242;
+    transform: rotateX(90deg);
+  }
+
+  32% {
+    color: #ea9242;
+    transform: rotateX(0deg);
+  }
+
+  48% {
+    color: #e0267f;
+    transform: rotateX(90deg);
+  }
+
+  64% {
+    color: #e0267f;
+    transform: rotateX(0deg);
+  }
+  80% {
     color: #1a83a9;
+    transform: rotateX(90deg);
+  }
+  96% {
+    color: #1a83a9;
+    transform: rotateX(0deg);
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
