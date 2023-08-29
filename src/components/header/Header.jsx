@@ -16,12 +16,16 @@ const Header = () => (
         <span>L</span>
         <span>O</span>
         <span>R</span>
-        <span> Q</span>
+        <span>Q</span>
         <span>U</span>
         <span>I</span>
-        <span>Z</span> 
+        <span>Z</span>
       </p>
     </div>
+    <nav className="header-nav">
+      <a className="header-link">Classic</a>
+      <a className="header-link active">Random</a>
+    </nav>
   </header>
 );
 

@@ -1,16 +1,21 @@
 .header {
-  width: 100vw;
-  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
   background-color: #efd6d6;
   border-bottom: solid 2px #fff;
 }
 
 .header-logo {
   display: flex;
+  margin-right: auto;
+  padding-left: 80px;
 }
 
 .header-img {
-    animation:spin 20s 1 linear;
+  animation: spin 20s 1 linear;
 }
 
 .header-title {
@@ -50,6 +55,29 @@
 }
 .header-title span:nth-child(9) {
   animation-delay: 4000ms;
+}
+
+.header-nav {
+  padding-right: 80px;
+}
+
+.header-link {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.header-link:not(.active):hover {
+    animation: hoverColor 2000ms infinite linear;
+    cursor: pointer;
+}
+
+.header-link:first-child {
+  margin-right: 40px;
+}
+
+.active {
+    animation: hoverColor 20s infinite linear;
 }
 
 @keyframes changeColor {
@@ -97,5 +125,22 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes hoverColor {
+  0% {
+    color: #1a83a9;
+  }
+
+  33% {
+    color: #e0267f;
+  }
+  66% {
+    color: #ea9242;
+  }
+
+  100% {
+    color: #1a83a9;
   }
 }
