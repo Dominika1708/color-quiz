@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/header/Header'
+import Quiz from './components/quiz/Quiz'
 
 function App() {
   const [color, setColor] = useState("#ffffff")
@@ -15,6 +16,7 @@ function App() {
           color is {color}
         </button>
       </div>
+      <Quiz/>
     </>
   )
 }
