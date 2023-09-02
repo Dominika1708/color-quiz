@@ -1,0 +1,13 @@
+.quiz {
+    padding: 40px 0;
+}
+
+.quiz-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.quiz-button:first-of-type {
+    margin-right: 40px;
+}
