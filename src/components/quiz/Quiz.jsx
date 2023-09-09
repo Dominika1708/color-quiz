@@ -54,9 +54,9 @@ const Quiz = () => {
           {colorTwo}
         </button>
       </div>
-      <p className="quiz-color" style={{ backgroundColor: combinedColors }}>
-        {combinedColors}
-      </p>
+      <div className="quiz-color" style={{ backgroundColor: combinedColors }}>
+        <p className="quiz-color-name">color is {combinedColors}</p>
+      </div>
     </div>
   );
 };
